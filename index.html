@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIBA - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!--<div class="logo">
+            ADIBA AHSAN ADRITA
+        </div>-->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm<br>
+            <span class="highlight">ADIBA<br>AHSAN ADRITA</span></h1>
+            <p>A Computer Science and Engineering student with a strong focus on advancing the future of robotics through innovation and research.</p>
+            <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image">
+            <img src="IMAGE/meee.jpg" height="50%" weidth="50%" alt="">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My undergraduate studies in Computer Science and Engineering have given me a solid grounding in programming, algorithms, and problem-solving. These are skills I'm really excited to apply to the world of robotics. What truly fascinates me is how we can make robots smarter by integrating Artificial Intelligence (AI).
+
+I'm particularly drawn to exploring how AI can help robots understand their surroundings, make decisions on their own, and even work alongside people. I'm eager to learn more about things like how robots can "see" and "learn" using AI, and how we can design AI systems that work well in the real world. The idea of using robotics to solve challenges and make our lives better is incredibly motivating for me, and I'm keen to keep learning and exploring in this dynamic field.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="alt-bg">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Languages</h3>
+                    <p>C, C++, Python, Matlab, JavaScript</p>
+                    <p>HTML, CSS, MySQL</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>Robotics Frameworks</h3>
+                    <p>ROS, OpenCV</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Tools & Concepts</h3>
+                    <p>Figma, Adobe Photoshop, Adobe Illustrator, Draw.io</p>
+                    <p>Data Science, Machine Learning, Artificial Intelligence</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Hardware Basics</h3>
+                    <p>Arduino, Motors, Sensors, Blutooth Module, Speakers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Cyber Management System</h3>
+                    <p>Cyber Management System is a C++ console application that secures user data from cyber threats with admin and user functionalities, data management, monitoring, "MALICIOUS ACTIVITY" alerts, and file handling as a database using binary search.
+</p>
+                    <div class="project-links">
+                        <a href="FILES/Cyber Management System Project Proposal (final).pdf" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Document</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>SearchinMAGE</h3>
+                    <p>
+SearchIngMAGE is an intuitive and user-friendly Image Search Engine designed to help users find relevant images on the internet using keywords or descriptions.</p>
+                    <div class="project-links">
+                        <a href="FILES/SearchIngMAGE.pdf" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Document</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Interactive Q&A Robot</h3>
+                    <p>The "Interactive Q&A Robot" project seeks to develop a robot with a movable head and hand capable of engaging in Q&A sessions, integrating robotics, coding, and AI to facilitate learning and interaction.</p>
+                    <div class="project-links">
+                        <a href="FILES/Documentation of Interactive Q & A Robot - (Correction) - Copy.pdf" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Document</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="alt-bg">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>I'm always open to discussing new opportunities or collaborations. Feel free to connect!</p>
+            <div class="contact-links">
+                <a href="mailto:adibaahsan333@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.facebook.com/share/1XNm6fQUmS/" target="_blank" class="contact-btn"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://github.com/adiba135" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Adiba Ahsan Adrita. All rights reserved.</p>
+    
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
